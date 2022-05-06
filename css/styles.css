@@ -75,7 +75,21 @@ h6{
 
 
 /* -----section 02----- */
-
+#about-section{
+  display: flex;
+  flex-direction: column;
+  width: 700px;
+}
+#about-section > h4{
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+  padding: 30px 0 30px 0;
+}
+#about-section > p{
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+  font-size: 13px;
+}
 
 /* section 02 end */
 
