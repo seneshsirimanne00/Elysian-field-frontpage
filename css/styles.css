@@ -48,6 +48,154 @@ h6{
   font-weight: 200 !important;
 }
 
+.inner_page_shape{
+  position: absolute;
+}
+
+.about_para{
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 500;
+  color: #87878A;
+}
+
+.greenButton{
+  background: #23C283;
+  border-radius: 15px;
+  border: none;
+  padding: 2px 25px;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 36px;
+  color: #116351;
+}
+
+.greenButton:hover{
+  background: #116351;
+  color: #23C283;
+  cursor:pointer;
+}
+
+.whiteButton{
+  background: none;
+  border-radius: 15px;
+  border: 2px solid #23C283;
+  padding: 2px 25px;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 36px;
+  color: #23C283;
+}
+
+.whiteButton:hover{
+  background: none;
+  color: #ffffff;
+  border: 2px solid #ffffff;
+  cursor:pointer;
+}
+
+/* From cssbuttons.io by @alexmaracinaru */
+.cta {
+  border: none;
+  background: none;
+  margin-top: 10px;
+ }
+ 
+ .cta span {
+  padding-bottom: 7px;
+  letter-spacing: 3px;
+  
+  padding-right: 15px;
+  text-transform: uppercase;
+ }
+ 
+ .cta svg {
+  transform: translateX(-8px);
+  transition: all 0.3s ease;
+ }
+ 
+ .cta:hover svg {
+  transform: translateX(0);
+ }
+ 
+ .cta:active svg {
+  transform: scale(0.9);
+ }
+ 
+ .hover-underline-animation {
+  position: relative;
+  color: #23C283;
+  padding-bottom: 20px;
+ }
+ 
+ .hover-underline-animation:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 1.5px;
+  bottom: 0;
+  left: 0;
+  background-color: #23C283;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+ }
+ 
+ .cta:hover .hover-underline-animation:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+ }
+
+/* -----cursor css----- */
+
+* {
+  cursor: none;
+}
+
+.cursor {
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  border: 2px solid #23C283;
+  transition: all 200ms ease-out;
+  position: fixed;
+  pointer-events: none;
+  left: 0;
+  top: 0;
+  transform: translate(calc(-50% + 15px), -50%);
+  z-index: 1000;
+}
+
+.cursor2 {
+  width: 20px;
+  height: 20px;
+  border-radius: 100%;
+  background-color: #116351;
+  opacity: .3;
+  position: fixed;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  transition: width .3s, height .3s, opacity .3s;
+  z-index: 1000;
+}
+
+.hover {
+  background-color:#23C283;
+  opacity: 0.5;
+}
+
+.cursorinnerhover {
+  width: 50px;
+  height: 50px;
+  opacity: .5;
+}
+
+
+
+/* -----cursor css end----- */
 
 /* ------------------------------- section styles start ------------------------------- */
 
@@ -56,7 +204,7 @@ h6{
 .hero{
   background-color: #0D3E2E; 
   width: 100%; 
-  height: 1300px;
+  height: 1060px;
   display: flex;
   justify-content: center;
 }
@@ -67,8 +215,57 @@ h6{
 }
 
 .hero-img{
-  height: 16vw;
-  margin-top: 18vh;
+  height: 21vw;
+  margin-top: 11vh;
+}
+
+.up_circles{
+  z-index: 8;
+  position: absolute;
+  width: 21vw;
+  top: 0;
+  left: 0;
+}
+
+.Scroll_down{
+  z-index: 8;
+  position: absolute;
+  width: 1vw;
+  top: 22vw;
+  left: 3vw;
+  animation-name: scrollDown;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes scrollDown {
+  0%   { top: 22vw;}
+  100% { top: 24vw}
+}
+
+.Social_media_icons{
+  display:flex;
+  position: absolute;
+  top: 22vw;
+  right: 2vw;
+  width: 30px;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sm_icon{
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  margin-bottom: 5px;
+}
+
+.sm_icon:hover{
+  width: 35px;
+  height: 35px;
 }
 
 /* section 01 end */
@@ -78,29 +275,134 @@ h6{
 #about-section{
   display: flex;
   flex-direction: column;
-  width: 700px;
+  height: 400px;
 }
-#about-section > h4{
+#about-section > h2{
   font-family: 'Poppins', sans-serif;
   text-align: center;
-  padding: 30px 0 30px 0;
+  color: #0D3E2E;
+  font-weight: 700;
+  font-size: xxx-large;
+  z-index: 8;
+  margin-top: -37px;
+  margin-bottom: 30px;
 }
-#about-section > p{
-  font-family: 'Poppins', sans-serif;
-  text-align: center;
-  font-size: 13px;
+
+.about-section-para{
+  width: 55vw;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
 }
+
+.about-section-arrows{
+  width: 45px;
+  position: relative;
+  top: 57px;
+  left: 86vw;
+
+  animation-name: upDown;
+  animation-duration: 0.7s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes upDown {
+  0%   { top: 60px;}
+  100% { top: 76px}
+}
+
 
 /* section 02 end */
 
 
 /* -----section 03----- */
 
+#tombstone-section{
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  padding: 50px 0;
+}
+
+.tomb_div_left{
+  display: flex;
+  width: 50%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 0px 87px 0 22px;
+}
+
+#tombstone-section .tomb_div_left h2{
+  font-family: 'Poppins', sans-serif;
+  color: #0D3E2E;
+  font-weight: 700;
+  font-size: xxx-large;
+  z-index: 8;
+  margin-bottom: 30px;
+}
 
 /* section 03 end */
 
 
 /* -----section 04----- */
+.memorial-section{
+  background-image: url('../images/memorialBak.png');
+  /* opacity:0.5; */
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: flex-end;
+  padding: 4vw 6vw !important;
+}
+
+.gbox{
+
+  width: 773px;
+  height: 589px;
+    /* From https://css.glass */
+  background: rgba(255, 255, 255, 0.19);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(6.7px);
+  -webkit-backdrop-filter: blur(6.7px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  padding: 84px;
+    color: white;
+}
+
+#headertext{
+  color: #23C283;
+  margin-bottom: 10px;
+}
+
+#memoParaText{
+  font-size: large;
+}
+
+.memoBtn{
+  margin-top: 40px;
+}
+
+.memostat{
+  width: 338px;
+}
+
+.statTopTxt{
+  font-size: larger;
+  margin: 0;
+  margin-top: 43px !important;
+
+}
+
+.statBtmTxt{
+  font-size: xxx-large;
+}
+
 
 
 /* section 04 end */
@@ -110,6 +412,96 @@ h6{
 
 
 /* section 05 end */
+
+/* ---- footer ----*/
+
+#section_footer{
+  color: #fff;
+  background-color:#0D3E2E;
+}
+
+#footerRight{
+  padding-left: 8%;
+  padding-right: 4%;
+}
+
+/* .social_media_icons{
+  padding: 15px;
+  background-color: #292A77;
+ color: #fff;
+ border-radius: 60%;
+ 
+} */
+
+.footer_social{
+  position: relative;
+  bottom: 0px;
+}
+
+.footer_row{
+    
+  
+  padding-top: 70px;
+  
+}
+.footer_img{
+  position: relative;
+  top: 70px;
+}
+
+.inate{
+  position: relative;
+  bottom: -70px;
+}
+
+/* footer form */
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  background-color: #0D3E2E;
+  border-top: 0px;
+  border-left: 0px;
+  border-right: 0px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 26px;
+  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */;
+}
+.contact_box{
+  margin-top: 40px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 500px;
+  padding: 200px auto;
+}
+
+.contact_input{
+width: 100%;
+height: 40px;
+background-color: #0D3E2E;
+border: none;
+border-bottom: 3px solid #ffffff;
+
+}
+
+.contact_input_msg{
+width: 100%;
+height: 90px;
+background-color: #0D3E2E;
+border: none;
+border-bottom: 3px solid #ffffff;
+}
+
+.contact_form{
+margin-top: 70px;
+}
+
+#footerTxtHeader{
+  font-weight: bold;
+  color: #23C283;
+}
+
+/* ---- footer end ---- */
 
 
 

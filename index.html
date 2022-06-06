@@ -36,45 +36,192 @@
 
     </head>
     <body>
+
+        <div class="cursor"></div>
+        <div class="cursor2"></div>
         
         <!-- hero section sec 1 -->
         <div class="container-fluid hero" id="hero-section">
-            <img src="images/desktop_logo.png" class="top-logo" alt="Logo">
+            <img  src="images/desktop_logo.png" class="top-logo" alt="Logo">
+            <img  src="images/up_circles.png"  class="up_circles" alt="inner_shape"  >
+            <img  src="images/scroll_down.png"  class="Scroll_down" alt="inner_shape"  >
 
-            <div class="hero-header">
-            <img src="images/elysianfield_logo_hero.png" class="hero-img" alt="elysian-field-logo">
-            <h6>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore 
-                magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris</h6>
+            <div class="Social_media_icons">
+                <a href="https://www.facebook.com"><img  src="images/sm_fb.png" class="sm_icon" alt="facebook"></a>
+                <a href="https://www.facebook.com"><img  src="images/sm_ig.png" class="sm_icon" alt="instagram"></a>
+                <a href="https://www.facebook.com"><img  src="images/sm_li.png" class="sm_icon" alt="linkedIn"></a>
             </div>
 
+            <div class="hero-header">
+            <img src="images/elysianfield_logo_hero.png" data-aos="fade-up" data-aos-duration="2000" class="hero-img" alt="elysian-field-logo">
+            <h6 data-aos="fade-up" data-aos-duration="2000">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore 
+                magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris</h6>
+                <button class="greenButton">
+                    Sign up with Email
+                </button>
+            </div>
+
+            <img  src="images/inner_shape.png" alt="inner_shape" class="inner_page_shape" style="z-index: 6; top: 540px; width: 100vw;">
+            <img  src="images/laptopsil.png" alt="inner_shape" class="inner_page_shape" style="z-index: 6; top: 535px; width: 42vw;">
         </div> <!-- hero section end -->
+        
 
         <!-- about section sec2 -->
-        <div class="container-sm" id="about-section" style="height: 400px; border: 2px solid red; ">
-            <h4 id="about-section-heading">Who we are</h4>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia voluptatem ratione minima, corrupti inventore fuga exercitationem optio eligendi! Voluptas, dolor? Vitae quidem id nesciunt beatae ea voluptates aliquid consectetur architecto eveniet eos?</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur eum provident iusto fuga, quas labore. Lorem ipsum dolor sit amet.</p>
-            
+        <div class="container-sm" id="about-section">
+            <h2 id="about-section-heading" data-aos="fade-up" data-aos-duration="2000">Who we are</h2>
+            <div class="about-section-para">
+                <p class="about_para" data-aos="fade-up" data-aos-duration="2000">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia voluptatem ratione minima, corrupti inventore fuga exercitationem optio eligendi! Voluptas, dolor? Vitae quidem id nesciunt beatae ea voluptates aliquid consectetur architecto eveniet eos?</p>
+                <p class="about_para" data-aos="fade-up" data-aos-duration="2000">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur eum provident iusto fuga, quas labore. Lorem ipsum dolor sit amet.</p>
+            </div>
+            <img  src="images/down_arrows.png"  alt="inner_shape" class="about-section-arrows" >
         </div><!-- about section end -->
 
         <!-- memorial section sec3 -->
-        <div class="container-fluid" id="about-section" style="width: 100%;height: 400px; border: 2px solid red;">
-
+        <div class="container-fluid" id="tombstone-section" >
+            <div class="tomb_div_left" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine" data-aos-duration="1000">
+                <h2 id="about-section-heading" >Tombstone</h2>
+                <p class="about_para" style="text-align:left;" >Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <button class="greenButton">
+                    Buy a Tombstone
+                </button>
+            </div>
+            <div class="tomb_div" >
+                <img  src="images/tombstonepic.png"  alt="inner_shape" style="width: 37vw; border-radius: 20px;" >
+            </div>
         </div><!-- section 3 end -->
 
         <!-- marketplace section sec4 -->
-        <div class="container-fluid" id="about-section" style="width: 100%;height: 400px; border: 2px solid red;">
-
+        <div class="container-fluid memorial-section" id="memorial-section" style="width: 100%;height: 730px; ">
+            <div class="gbox">
+                <h1 id="headertext">Memorial</h1>
+                <p id="memoParaText">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <button class="whiteButton memoBtn">
+                    Go to memorial
+                </button>
+                <div class="row memostat">
+                    <div class="col">
+                        <h4 class="statTopTxt">No of Tombs</h4>
+                        <h1 class="statBtmTxt">20K+</h1>
+                    </div>
+                    <div class="col">
+                        <h4 class="statTopTxt">No of Tombs</h4>
+                        <h1 class="statBtmTxt">20K+</h1>
+                    </div>
+                </div>
+            </div>
         </div><!-- section 4 end -->
 
         <!-- footer section sec 5 -->
-        <div class="container-fluid" id="about-section" style="width: 100%;height: 400px; border: 2px solid red;">
+        <div class="container-fluid" id="section_footer">
+            <div class="row footer_row" style=" height: 100vh;">
+                <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6" id="footerRight"> 
+                    <div class="container contact_box" data-aos="fade-up" data-aos-duration="2000">
+                        <h1 id="footerTxtHeader">Say hi!</h1>
+                        <form id="myForm" class="contact_form">
+                        <label data-aos="fade-down" data-aos-duration="1000">Full Name</label>
+                        <br/>
+                        <input class="contact_input" name="full_name" />
+                        <br/><br/>
+                        <label data-aos="fade-down" data-aos-duration="1000">Email</label>
+                        <br/>
+                        <input class="contact_input" name="email" />
+                        <br/><br/>
+                        <label data-aos="fade-down" data-aos-duration="1000">Message</label>
+                        <br/>
+                        <input class="contact_input_msg" name="message" />         
+                        <br/>
+                        <br/>
+                        </form>
+                        
+                        <button onclick="SubForm()" class="cta"  data-aos-duration="1500">
+                        <span class="hover-underline-animation">Submit  </span>
+                        <svg id="arrow-horizontal" xmlns="http://www.w3.org/2000/svg" width="30" height="10" viewBox="0 0 46 16">
+                            <path id="Path_10" data-name="Path 10" d="M8,0,6.545,1.455l5.506,5.506H-30V9.039H12.052L6.545,14.545,8,16l8-8Z" transform="translate(30)"></path>
+                        </svg>
+                        </button>
+                    </div>
+                </div>
 
-        </div><!-- footer end -->
+                <div class="col-sm-12 col-md-6 col-lg-6 col-xl-4">
+                    <h1 data-aos="fade-up" data-aos-duration="1500">Project <span style="color: #23C283;">Categories</span></h1>
+                    <p data-aos="fade-up" data-aos-duration="2000" style="color: #23C283;" >"Lorem ipsum dolor sit amet, consectetur adipisci ng elit, 
+                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim  "Lorem ipsum dolor sit amet,
+                    consectetur adipisci ng elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim </p>
+                    <br>
+                    <div data-aos="fade-up" data-aos-duration="2000">
+                        <span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="#23C283" class="bi bi-envelope" viewBox="0 0 16 16">
+                            <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z"/>
+                            </svg>
+                            Companyname@gmail.com 
+                        </span>
+                        <br><br>
+                        <span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="#23C283" class="bi bi-telephone" viewBox="0 0 16 16">
+                                <path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
+                              </svg>
+                            +94 293 21 1240 
+                        </span>
+                        <br><br>
+                        <span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="#23C283" class="bi bi-geo-alt" viewBox="0 0 16 16">
+                                <path d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z"/>
+                                <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+                              </svg>
+                             Colombo , Sri Lanka 
+                        </span>
+                    </div>   
+                </div>
 
+                <div class="row">
+                    <!-- <p  style="margin-left: 20px;font-weight: lighter; font-size: 10px;" class="inate">Craftmanship <a href="https://www.instagram.com/inate.creative.labs/" style="font-weight: bold;"> @INATE </a> Creative Labs 2022</p>     -->
+                    <h3 style="text-align: center;font-size: 100%;">All rights reserved Elysianfield 2022</h3>
+                </div>
+            </div>
 
+        <!-- footer section end -->
 
     </body>
+
+    <!-- Cursor script -->
+    <script>
+        var cursor = document.querySelector('.cursor');
+        var cursorinner = document.querySelector('.cursor2');
+        var a = document.querySelectorAll('a');
+
+        document.addEventListener('mousemove', function(e){
+        var x = e.clientX;
+        var y = e.clientY;
+        cursor.style.transform = `translate3d(calc(${e.clientX}px - 50%), calc(${e.clientY}px - 50%), 0)`
+        });
+
+        document.addEventListener('mousemove', function(e){
+        var x = e.clientX;
+        var y = e.clientY;
+        cursorinner.style.left = x + 'px';
+        cursorinner.style.top = y + 'px';
+        });
+
+        document.addEventListener('mousedown', function(){
+        cursor.classList.add('click');
+        cursorinner.classList.add('cursorinnerhover')
+        });
+
+        document.addEventListener('mouseup', function(){
+        cursor.classList.remove('click')
+        cursorinner.classList.remove('cursorinnerhover')
+        });
+
+        a.forEach(item => {
+        item.addEventListener('mouseover', () => {
+            cursor.classList.add('hover');
+        });
+        item.addEventListener('mouseleave', () => {
+            cursor.classList.remove('hover');
+        });
+        })
+    </script>
+    <!-- Cursor script -->
 
     <!-- bootstrap script CDN -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
@@ -88,5 +235,6 @@
         AOS.init();
     </script>
     <!-- aos script -->
+
 
 </html>
