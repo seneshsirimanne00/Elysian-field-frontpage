@@ -12,8 +12,10 @@
 }
 
 /* Large Devices, Wide Screens */
-@media only screen and (max-width : 1366px) {
-
+@media only screen and (max-width : 1600px) {
+.inner_page_shape{
+top: 568px !important;
+}
 	
 }
 
